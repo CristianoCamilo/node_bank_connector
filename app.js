@@ -6,4 +6,8 @@ http.createServer(function (request, response) {
         'Access-Control-Allow-Origin' : '*'
     });
     response.end('Hello World\n');
-}).listen(1337);
+}).listen(process.env.PORT || 80);
+
+
+console.log("servidor de pé naporta..: " + (process.env.PORT || 80) );
+// process.env.PORT || 3000, process.env.IP || "0.0.0.0"
